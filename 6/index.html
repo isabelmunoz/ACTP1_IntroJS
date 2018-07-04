@@ -25,8 +25,24 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
+      <div id="gallery">
+         <figure><img src="1.jpg" alt=""></figure>
+         <figure><img src="2.jpg" alt=""></figure>
+         <figure><img src="3.jpg" alt=""></figure>
+      </div>  
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+   <script>
+        $(function() {
+        $( "img", "#gallery" ).on("contextmenu", function(event){
+           event.preventDefault();
+           alert("Imágenes con copyright, no se puede descargar sin el consentimiento del autor, lo sentimos");
+           });
+        });
+
+   </script>
   </body>
 </html>
