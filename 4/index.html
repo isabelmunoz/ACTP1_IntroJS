@@ -10,10 +10,20 @@
     <title></title>
   </head>
   <body>
+
     <p> clic !! </p>
     <p> clic !! </p>
     <p> clic !! </p>
     <h3> no clic !! </h3>
     <p> clic !! </p>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+     <script>
+
+     $("p").on("click",function(){
+        alert("Hola, apareceré cada vez que presiones en los párrafos 'clic'");
+      });
+     
+     </script>
   </body>
 </html>
